@@ -63,11 +63,13 @@ const Hero = () => {
               >
                 {roles[currentRoleIndex]}
               </motion.span>
+
+              {/* Adjusted paragraph styles */}
               <motion.p
                 variants={container(1)}
                 initial="hidden"
                 animate="visible"
-                className="my-2 max-w-xl py-6 font-light tracking-tighter text-justify"
+                className="my-4 max-w-xl py-4 font-light text-left leading-relaxed"
               >
                 {HERO_CONTENT}
               </motion.p>

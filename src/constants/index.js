@@ -9,17 +9,20 @@ import project10 from "../assets/projects/project-10.jpg"; // Path to your proje
 import project11 from "../assets/projects/project-11.jpg"; // Path to your project image
 
 
-export const HERO_CONTENT = `I am a data-driven professional with a passion for uncovering insights and solving complex problems. With expertise in Python, SQL, and advanced machine learning frameworks like TensorFlow and PyTorch, I specialize in crafting efficient ETL pipelines, building scalable data architectures, and creating impactful visualizations. My experience spans across developing data-driven strategies, automating workflows, and delivering actionable business intelligence through tools like Tableau, Power BI, and AWS. I'm committed to leveraging my skills to drive innovation and create value in data analytics and engineering.`;
+export const HERO_CONTENT = `
+I am a data-driven professional with a passion for solving complex problems through analytics and innovative solutions. With expertise in Python, SQL, and machine learning frameworks like TensorFlow and PyTorch, I specialize in developing efficient ETL pipelines, building scalable data architectures, and delivering impactful visualizations. My experience includes designing data-driven strategies, automating workflows, and providing actionable business intelligence using tools such as Tableau, Power BI, and AWS. I aim to leverage my skills to drive innovation, optimize processes, and deliver data-centric solutions.
+`;
 export const ABOUT_TEXT = `
-      My journey into the world of data analytics began with a deep curiosity for uncovering patterns and insights hidden within data. 
-      With a Bachelor of Technology in Electrical and Electronics Engineering from Mahindra École Centrale, Hyderabad, I laid the foundation for my technical skills, which I have since refined through my Master of Science in Data Analytics Engineering at Northeastern University, Boston.
-  
-      Over the years, I have gained hands-on experience in Python, SQL, and R, alongside tools like Tableau and Power BI, allowing me to transform raw data into meaningful insights. My professional journey includes working as a Data Analyst at Deep Red Ink Digital Marketing Agency, where I optimized workflows, developed interactive dashboards, and delivered data-driven solutions that enhanced client satisfaction and performance.
-  
-      Through academic and professional projects, I have designed ETL pipelines, built predictive models, and implemented clustering techniques to solve real-world challenges. This journey has been shaped by a constant drive to learn, adapt, and innovate, equipping me with the skills to approach data challenges from multiple perspectives and deliver impactful results.
-  
-      I am passionate about leveraging data to tell compelling stories and empower decision-making, always aiming to make a positive impact through my work.
-    `;
+My passion for data analytics stems from a desire to uncover meaningful patterns and insights hidden within datasets. With a Bachelor of Technology in Electrical and Electronics Engineering from Mahindra École Centrale and a Master of Science in Data Analytics Engineering from Northeastern University, I have cultivated a strong technical foundation that supports my expertise in Python, SQL, and R.
+
+Professionally, I have honed my skills as a Data Analyst, working on projects that involved optimizing workflows, creating interactive dashboards, and implementing data-driven strategies to solve business challenges. My tenure at Deep Red Ink Consulting and PSR Tech Hub has equipped me with the ability to process and analyze large datasets, automate workflows, and deliver insights that drive decision-making.
+
+In addition to my work experience, I have completed academic and independent projects such as designing ETL pipelines, implementing machine learning models, and conducting exploratory data analysis. These experiences have prepared me to tackle real-world challenges from multiple perspectives and deliver solutions that create value.
+
+My goal is to leverage data to tell compelling stories, empower decision-makers, and contribute to impactful innovations in the field of data analytics and engineering.
+`;
+
+
   
 export const EXPERIENCES = [
   {
@@ -31,12 +34,32 @@ export const EXPERIENCES = [
     `,
     technologies: ["Python", "Power BI", "Tableau", "Excel", "Scikit-learn", "Google Analytics"],
   },
-  
+  {
+    year: "2020 - 2021",
+    role: "Data Analyst",
+    company: "PSR Tech Hub",
+    description: `
+      Extracted, cleaned, and analyzed datasets of over 1 million rows using SQL and Excel, providing actionable insights that improved IT resource utilization. Developed Power BI dashboards to monitor system performance, cloud resource allocation, and operational metrics, enabling proactive decision-making. Conducted trend analysis in Excel and created detailed reports to improve the accuracy of project deliverables. Collaborated on cloud-based projects to optimize resource allocation and reduce operational costs.
+    `,
+    technologies: ["SQL", "Excel", "Power BI"],
+  },
   
   
 ];
 
 export const PROJECTS = [
+
+ 
+  {
+      title: "AWS Udemy Warehouse",
+      image: project3,
+      description:
+        "An end-to-end data warehouse project leveraging AWS Lambda, Glue, Athena, and Tableau to automate and analyze Udemy course data. The pipeline automatically processes new data and updates structured tables for real-time insights.",
+      technologies: ["AWS Lambda", "Glue", "S3", "Athena", "Python", "Tableau"],
+      github: "https://github.com/sandavenishubhang/AWS-Udemy-warehouse",
+      liveDemo: "https://public.tableau.com/app/profile/shubhang.yadav.sandaveni/viz/UdemyDatawarehouse/Dashboard1",
+  },
+
   {
     title: "Music Streaming Data Warehouse",
     image: project1,

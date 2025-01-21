@@ -1,4 +1,3 @@
-import aboutImg from "../assets/about.jpg";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -22,39 +21,21 @@ const About = () => {
           About <span className="text-neutral-500">Me</span>
         </h1>
 
-        <div className="flex flex-wrap">
-          {/* Image Section */}
-          <motion.div
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.5 }}
-            className="w-full lg:w-1/2 lg:p-8"
-          >
-            <div className="flex items-center justify-center">
-              <img
-                src={aboutImg}
-                alt="About Me"
-                className="rounded-lg shadow-lg max-h-[500px] object-cover"
-              />
-            </div>
-          </motion.div>
-
-          {/* Text Section */}
-          <motion.div
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 0.5 }}
-            className="w-full lg:w-1/2 lg:p-8"
-          >
-            <div className="max-w-xl mx-auto">
-              {paragraphs.map((paragraph, index) => (
-                <p key={index} className="mb-6 text-neutral-400 leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-          </motion.div>
-        </div>
+        {/* Text Section */}
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 100 }}
+          transition={{ duration: 0.5 }}
+          className="w-full lg:p-8"
+        >
+          <div className="max-w-xl mx-auto">
+            {paragraphs.map((paragraph, index) => (
+              <p key={index} className="mb-6 text-neutral-400 leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </div>
   );

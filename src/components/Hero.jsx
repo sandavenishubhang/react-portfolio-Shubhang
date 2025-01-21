@@ -13,7 +13,7 @@ const container = (delay) => ({
 });
 
 const imageAnimation = {
-  hidden: { x: 100, opacity: 0 },
+  hidden: { x: -100, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
@@ -42,7 +42,21 @@ const Hero = () => {
   return (
     <div className="relative border-b border-neutral-900 pb-4 lg:pb-20">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap lg:flex-nowrap">
+          {/* Image Section */}
+          <div className="w-full lg:w-1/2 lg:p-8">
+            <motion.div
+              className="flex justify-center"
+              variants={imageAnimation}
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+            >
+              <img src={profilePic} alt="Shubhang Yadav" className="rounded-lg shadow-lg max-w-full" />
+            </motion.div>
+          </div>
+
+          {/* Text Section */}
           <div className="w-full lg:w-1/2">
             <div className="flex flex-col items-center lg:items-start">
               <motion.h1
@@ -64,7 +78,6 @@ const Hero = () => {
                 {roles[currentRoleIndex]}
               </motion.span>
 
-              {/* Adjusted paragraph styles */}
               <motion.p
                 variants={container(1)}
                 initial="hidden"
@@ -74,17 +87,6 @@ const Hero = () => {
                 {HERO_CONTENT}
               </motion.p>
             </div>
-          </div>
-          <div className="w-full lg:w-1/2 lg:p-8">
-            <motion.div
-              className="flex justify-center"
-              variants={imageAnimation}
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
-            >
-              <img src={profilePic} alt="Shubhang Yadav" className="rounded-lg" />
-            </motion.div>
           </div>
         </div>
       </div>

@@ -27,7 +27,6 @@ const Hero = () => {
     "Business Analyst",
     "Data Scientist",
     "Data Engineer",
-    "Machine Learning Engineer",
   ]);
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 

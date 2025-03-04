@@ -85,6 +85,16 @@ export const PROJECTS = [
     technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Seaborn"],
     github: "https://github.com/sandavenishubhang/CreditCardDefaultPrediction", // Replace with actual link
   },
+
+  {
+    title: "HCAHPS Patient Satisfaction Dashboard",
+    image: project12, // Replace with the actual project image reference
+    description:
+      "An interactive Tableau dashboard analyzing HCAHPS Patient Satisfaction Scores across U.S. hospitals. Utilizes MySQL for data cleaning and preprocessing, with dynamic filters and visualizations to compare hospital performance, survey response rates, and cohort benchmarks.",
+    technologies: ["Tableau", "MySQL", "Data Visualization"],
+    liveDemo: "https://public.tableau.com/app/profile/shubhang.yadav.sandaveni/viz/HCAHPSPatientSatisfactionScores_17411230022710/HCAHPSDashboard?publish=yes",
+  },
+  
   {
     title: "Diabetes Prediction",
     image: project7, // Replace with an image related to the project

@@ -7,6 +7,7 @@ import project8 from "../assets/projects/project-8.jpg"; // Replace with an appr
 import project9 from "../assets/projects/project-9.jpg"; // Replace with an appropriate image path
 import project10 from "../assets/projects/project-10.jpg"; // Path to your project image
 import project11 from "../assets/projects/project-11.jpg"; // Path to your project image
+import project12 from "../assets/projects/project-12.jpg";
 
 
 export const HERO_CONTENT = `
